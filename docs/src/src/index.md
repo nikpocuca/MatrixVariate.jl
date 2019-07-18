@@ -1,9 +1,9 @@
-# Guide for MatrixNormTest
+# A Short Guide for MatrixNormTest
 
 A very simple test for matrix variate normality of data, by comparing two Mahalanobis Squared Distances by Nik Počuča
 
 - [Paper](https://www.google.com)
-- [Github](https://www.google.com)
+- [Github](https://github.com/nikpocuca/MatrixNormTest.jl)
 
 ![](norm.png) ![](nnorm.png)
 
