@@ -2,9 +2,11 @@
 
 A Julia package for testing the matrix variate normality data. 
 
-
 ![](/docs/src/src/norm.png)
 ![](/docs/src/src/nnorm.png)
+
+## Documentation 
+The [package documentation]() is very small as the test is fairly straight forward, it contains only one main function and one for plotting. 
 
 ## Citing MatrixNormTest.jl
 
