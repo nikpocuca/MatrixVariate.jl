@@ -1,11 +1,11 @@
 # Guide for MatrixNormTest
 
-A very simple test for matrix variate normality of data, by comparing two Mahalanobis Squared Distances.
+A very simple test for matrix variate normality of data, by comparing two Mahalanobis Squared Distances by Nik Počuča
 
 - [Paper](https://www.google.com)
 - [Github](https://www.google.com)
 
-
+![](norm.png) ![](nnorm.png)
 
 ## Installation
 To download the package simply run
@@ -20,18 +20,18 @@ The function for the main test of matrix variate normality in a dataset.
 - α is power level.
 - iter is the number of mle iterations for the matrix variate MLE estimate.
 
-```julia
+```@docs
 MatVTest(X::Array{Float64,3};α::Float64 = 0.05,iter::Int64 = 100)
 ```
 
 ## Plotting and Summary
 DD plot function, that takes in a MatrixNormTest object and plots the distances along the reference line.
-```julia
+```@docs
 ddplot(mat_test::MatrixVariateNormalTest)
 ```
-
+An Example
 ```julia
-# using RCall, MatrixNormTest
+using RCall, MatrixNormTest
 
 # example data function
 mat_data = MatrixNormTest.example_data();
