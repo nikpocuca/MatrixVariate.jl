@@ -16,7 +16,7 @@ Pkg.add("MatrixNormTest")
 ```
 
 ## Documentation 
-The [package documentation]() is very small as the test is fairly straight forward, it contains only one main function and one for plotting. 
+The [package documentation](https://nikpocuca.github.io/MatrixNormTest.jl/) is very small as the test is fairly straight forward, it contains only one main function and one for plotting. 
 
 ## Citing MatrixNormTest.jl
 
