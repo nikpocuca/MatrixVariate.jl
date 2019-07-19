@@ -5,7 +5,7 @@ A Julia package for testing the matrix variate normality data.
 ![](/docs/src/src/norm.png)
 ![](/docs/src/src/nnorm.png)
 ## Installation 
-To download the package simply run
+To download the package simply run the following in the pkg mode within the REPL.
 ```julia
 (v1.1) pkg> add https://github.com/nikpocuca/MatrixNormTest.jl
 ```
