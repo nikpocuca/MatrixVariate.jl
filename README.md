@@ -7,12 +7,12 @@ A Julia package for testing the matrix variate normality data.
 ## Installation 
 To download the package simply run
 ```julia
-add MatrixNormTest
+add https://github.com/nikpocuca/MatrixNormTest.jl
 ```
 in pkg mode within a julia repl or the old way through Pkg
 ```julia
 using Pkg
-Pkg.add("MatrixNormTest")
+Pkg.add("https://github.com/nikpocuca/MatrixNormTest.jl")
 ```
 
 ## Documentation 
