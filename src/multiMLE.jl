@@ -1,6 +1,6 @@
 # Compute the maximum likelihood estimates of mu vector and sigma of a multivariate normal.
 
-using StatsBase, DataStructures
+using StatsBase, DataStructures, Statistics
 
 function mlestimate(X::Array{Float64,3})::OrderedDict{Symbol,Any}
 
@@ -8,7 +8,7 @@ function mlestimate(X::Array{Float64,3})::OrderedDict{Symbol,Any}
 	x_is::Array{Float64,3} = mapslices(vec,X,dims=[1,2]);
 
 	# compute estimate of mu_hat
-	mu_hat::Array{Float64,2} = mapslices(mean,x_is,dims=3)[:,:,1];
+	mu_hat::Array{Float64,2} = mapslices(Statistics.mean,x_is,dims=3)[:,:,1];
 
 	#estimate sigma
 	inner_terms::Array{Float64,3} = mapslices(x -> ((x-mu_hat))*(x-mu_hat)',x_is,dims = [1,2]);
