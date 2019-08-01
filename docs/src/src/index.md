@@ -1,20 +1,25 @@
-# A Short Guide for MatrixNormTest
+# A Short Guide for MatrixVariate
 
-A very simple test for matrix variate normality of data, by comparing two Mahalanobis Squared Distances by Nik Počuča
+## Installation
+To download the package simply run
+```julia
+add https://github.com/nikpocuca/MatrixVariate.jl
+```
+in pkg mode within a julia repl.
+
+## Features
+
+### MatrixNormTest
+
+A simple framework for assessing the matrix variate normality of data.
+by Nik Počuča
 
 - [Paper](https://www.google.com)
 - [Github](https://github.com/nikpocuca/MatrixNormTest.jl)
 
 ![](norm.png) ![](nnorm.png)
 
-## Installation
-To download the package simply run
-```julia
-add MatrixNormTest
-```
-in pkg mode within a julia repl.
-
-## Main Test
+### Main Test
 The function for the main test of matrix variate normality in a dataset.
 - X is an r x c x N array.
 - α is power level.
@@ -24,7 +29,7 @@ The function for the main test of matrix variate normality in a dataset.
 MatVTest(X::Array{Float64,3};α::Float64 = 0.05,iter::Int64 = 100)
 ```
 
-## Plotting and Summary
+### Plotting and Summary
 DD plot function, that takes in a MatrixNormTest object and plots the distances along the reference line.
 ```@docs
 ddplot(mat_test::MatrixVariateNormalTest)
@@ -50,7 +55,7 @@ ddplot(mtest_B);
 
 ```
 
-## Objects
+### Objects
 MatrixVariateNormalTest object
 
 An object that contains all necessary information for a matrix variate normality test

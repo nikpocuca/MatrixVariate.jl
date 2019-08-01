@@ -1,5 +1,5 @@
 push!(LOAD_PATH,"../../../src")
 
-using Documenter, MatrixNormTest
+using Documenter, MatrixVariate
 
-makedocs(sitename="MatrixNormTest")
+makedocs(sitename="MatrixVariate")
