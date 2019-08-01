@@ -1,20 +1,21 @@
-# MatrixNormTest.jl
+# MatrixVariate.jl
 
-A Julia package for testing the matrix variate normality data. 
+A complete statistical framework for analyzing matrix variate data.
+
 
 ![](/docs/src/src/norm.png)
 ![](/docs/src/src/nnorm.png)
 ## Installation 
 To download the package simply run the following in the pkg mode within the REPL.
 ```julia
-(v1.1) pkg> add https://github.com/nikpocuca/MatrixNormTest.jl
+(v1.1) pkg> add https://github.com/nikpocuca/MatrixVariate.jl
 ```
 
 
 ## Documentation 
 The [package documentation](https://nikpocuca.github.io/MatrixNormTest.jl/) is very small as the test is fairly straight forward, it contains only one main function and one for plotting. 
 
-## Citing MatrixNormTest.jl
+## Citing  MatrixVariate.jl
 
 To cite MatrixNormTest.jl, please reference the [arXiv paper](https://arxiv.org/abs/1812.09064). Sample Bibtex is given below:
 
