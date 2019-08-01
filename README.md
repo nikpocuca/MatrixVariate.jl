@@ -17,7 +17,7 @@ The [package documentation](https://nikpocuca.github.io/MatrixVariate.jl/) is ve
 
 ## Citing  MatrixVariate.jl
 
-To cite MatrixNormTest.jl, please reference the [arXiv paper](https://arxiv.org/abs/1812.09064). Sample Bibtex is given below:
+To cite MatrixVariate.jl, please reference the [arXiv paper](https://arxiv.org/abs/1812.09064). Sample Bibtex is given below:
 
 ```
 @article{gaussianprocesses.jl,
