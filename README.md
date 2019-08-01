@@ -1,10 +1,23 @@
-# MatrixVariate.jl
+# MatrixVariate.jl Version 0.1.0 
 
 A complete statistical framework for analyzing matrix variate data.
 
+## Installation 
+To download the package simply run the following in the pkg mode within the REPL. 
+```julia
+add https://github.com/nikpocuca/MatrixVariate.jl
+```
+
+Includes the following: 
+
+## MatrixNormTest 
+A framework for assessing matrix variate normality. [arXiv paper](https://arxiv.org/abs/1812.09064). 
 
 ![](/docs/src/src/norm.png)
 ![](/docs/src/src/nnorm.png)
+
+## The Mixtures of Bilinear Factor Analyzers 
+
 ## Installation 
 To download the package simply run the following in the pkg mode within the REPL.
 ```julia
