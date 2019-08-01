@@ -13,7 +13,7 @@ To download the package simply run the following in the pkg mode within the REPL
 
 
 ## Documentation 
-The [package documentation](https://nikpocuca.github.io/MatrixNormTest.jl/) is very small as the test is fairly straight forward, it contains only one main function and one for plotting. 
+The [package documentation](https://nikpocuca.github.io/MatrixVariate.jl/) is very small as the test is fairly straight forward, it contains only one main function and one for plotting. 
 
 ## Citing  MatrixVariate.jl
 
