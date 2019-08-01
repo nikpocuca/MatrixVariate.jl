@@ -8,20 +8,13 @@ To download the package simply run the following in the pkg mode within the REPL
 add https://github.com/nikpocuca/MatrixVariate.jl
 ```
 
-Includes the following: 
+## Includes the following: 
 
-## MatrixNormTest 
+### MatrixNormTest 
 A framework for assessing matrix variate normality. [arXiv paper](https://arxiv.org/abs/1812.09064). 
 
 ![](/docs/src/src/norm.png)
 ![](/docs/src/src/nnorm.png)
-
-## Installation 
-To download the package simply run the following in the pkg mode within the REPL.
-```julia
-(v1.1) pkg> add https://github.com/nikpocuca/MatrixVariate.jl
-```
-
 
 ## Documentation 
 The [package documentation](https://nikpocuca.github.io/MatrixVariate.jl/) is very small as the test is fairly straight forward, it contains only one main function and one for plotting. 
