@@ -6,7 +6,6 @@
 	include("mvMLE.jl")
 	include("multiMLE.jl")
 
-
 	mutable struct MatrixVariateNormalTest
 		d_mat::Array{Float64,1};
 		d_mult::Array{Float64,1};
