@@ -77,7 +77,7 @@
 		example_data()
 	"""
 	function example_data()
-		basename = joinpath(dirname(@__FILE__), "data","ex.jld2")::String
+		basename = joinpath(dirname(@__FILE__), "../data","ex.jld2")::String
 		@load basename X_A X_B
 		return(X_A,X_B)
 	end

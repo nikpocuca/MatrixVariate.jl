@@ -36,10 +36,10 @@ ddplot(mat_test::MatrixVariateNormalTest)
 ```
 An Example
 ```julia
-using RCall, MatrixNormTest
+using RCall, MatrixVariate
 
 # example data function
-mat_data = MatrixNormTest.example_data();
+mat_data = MatrixVariate.example_data();
 X_A = mat_data[1];
 X_B = mat_data[2];
 
