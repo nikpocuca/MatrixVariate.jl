@@ -1,8 +1,8 @@
-# Compute the maximum likelihood estimates of mu vector and sigma of a multivariate normal.
+# Compute the unbiased maximum likelihood estimates of mu vector and sigma of a multivariate normal.
 
 using StatsBase, DataStructures, Statistics
 
-function mlestimate(X::Array{Float64,3})::OrderedDict{Symbol,Any}
+function unbi_mult_estimate(X::Array{Float64,3})::OrderedDict{Symbol,Any}
 
 	# compute map slices
 	x_is::Array{Float64,3} = mapslices(vec,X,dims=[1,2]);

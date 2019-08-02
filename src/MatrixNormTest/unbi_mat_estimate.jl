@@ -2,7 +2,7 @@
 using LinearAlgebra
 
 
-function mvMLE(X::Array{Float64,3},maxiter::Int64=100)::OrderedDict{Symbol,Any}
+function unbi_mat_estimate(X::Array{Float64,3},maxiter::Int64=100)::OrderedDict{Symbol,Any}
 
     N::Int64 = size(X,3);
     r::Int64 = size(X,1);

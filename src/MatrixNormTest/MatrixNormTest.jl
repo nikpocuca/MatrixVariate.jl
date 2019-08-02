@@ -3,8 +3,8 @@
 	# Matrix Variate Mahalanobis Distance functions
 	include("mvoutlier.jl")
 	# Maximum Likelihood Estimates
-	include("mvMLE.jl")
-	include("multiMLE.jl")
+	include("unbi_mult_estimate.jl")
+	include("unbi_mat_estimate.jl")
 
 	mutable struct MatrixVariateNormalTest
 		d_mat::Array{Float64,1};
@@ -24,7 +24,7 @@
 	"""
 	function MatVTest(X::Array{Float64,3};α::Float64 = 0.05,iter::Int64 = 100)::MatrixVariateNormalTest
 
-		mdl::OrderedDict{Symbol,Any} = mvMLE(X,iter);
+		mdl::OrderedDict{Symbol,Any} = unbi_mat_estimate(X,iter);
 
 	 	# get estimates from the model
 	 	M::Array{Float64,2} = mdl[:M][:,:,1];
@@ -35,7 +35,7 @@
 		distances_Matrix::Array{Float64,1} = mvo_dist(X,M,U,V);
 
 		# vectorize X
-		mdl2::OrderedDict{Symbol,Any} = mlestimate(X)
+		mdl2::OrderedDict{Symbol,Any} = unbi_mult_estimate(X)
 
 	 	μ::Array{Float64,1} = mdl2[:mu][:,1]
 	   	σ::Array{Float64,2} = mdl2[:sigma]

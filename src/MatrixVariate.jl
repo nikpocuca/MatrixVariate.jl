@@ -8,8 +8,7 @@ module MatrixVariate
 
 	include("MatrixNormTest/MatrixNormTest.jl")
 
-	print("Matrix Normality Test\n")
-	print("Written by Nik Počuča\n\n")
+	print("MatrixVariate Loaded")
 
 	# abstract type definitions
 	abstract type MatrixVariateTest end
