@@ -51,7 +51,7 @@ function U_mle(X::Array{Float64,3},
 
     # Begin for loop
 
-    denom::Float64 = N*c;
+    denom::Float64 = (N-1)*c;
     for i::Int64 = 1:N # Through observations
         # Using cholesky variant instead of direct computation for symmetry
         #L = V_inv_chol[:,:,j][1].factors';
