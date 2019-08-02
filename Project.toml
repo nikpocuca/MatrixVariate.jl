@@ -1,6 +1,6 @@
 name = "MatrixVariate"
 uuid = "946e395a-a902-11e9-38c2-c3243e8e5be8"
-authors = ["Nik Počuča"]
+authors = ["Nik Počuča, Michael P. B. Gallaugher, Paul D. McNicholas"]
 version = "0.1.0"
 
 [deps]

@@ -1,4 +1,4 @@
-# Compute the maximum likelihood estimates of mu vector and sigma of a multivariate normal.
+# Compute MLEs of mu and sigma for a multivariate normal.
 
 using StatsBase, DataStructures
 

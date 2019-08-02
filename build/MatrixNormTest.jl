@@ -14,8 +14,6 @@ module MatrixNormTest
 	include("multiMLE.jl")
 
 	print("Matrix Normality Test\n")
-	print("Written by Nik Počuča\n\n")
-
 
 	abstract type MatrixVariateTest end
 
