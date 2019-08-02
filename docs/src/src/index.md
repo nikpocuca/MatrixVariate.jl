@@ -22,7 +22,7 @@ A simple framework for assessing the matrix variate normality of data.
 The function for the main test of matrix variate normality in a dataset.
 - X is an r x c x N array.
 - α is the significance level.
-- iter is the number of mle iterations for the matrix variate MLE estimate.
+- iter is the number of iterations for the matrix variate estimates.
 
 ```@docs
 MatVTest(X::Array{Float64,3};α::Float64 = 0.05,iter::Int64 = 100)

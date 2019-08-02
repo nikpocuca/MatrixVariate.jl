@@ -1,4 +1,4 @@
-# Matrix Variate NORMAL MLE based on Duthiell
+# Matrix Variate Normal Unbiased Estimate based on Duthiell
 using LinearAlgebra
 
 
@@ -17,16 +17,16 @@ function unbi_mat_estimate(X::Array{Float64,3},maxiter::Int64=100)::OrderedDict{
     # Initilize U and V
     V_eye::Array{Float64,2} = (zeros(c,c) + I);
 
-    U_o::Array{Float64,2} = U_mle(X,M,V_eye);
-    V_o::Array{Float64,2} = V_mle(X,M,U_o);
+    U_o::Array{Float64,2} = U_est(X,M,V_eye);
+    V_o::Array{Float64,2} = V_est(X,M,U_o);
 
     U::Array{Float64,2} = U_o;
     V::Array{Float64,2} = V_o;
 
     for i = 1:maxiter
         # Estimate U then V
-        U = U_mle(X,M,V)
-        V = V_mle(X,M,U)
+        U = U_est(X,M,V)
+        V = V_est(X,M,U)
     end
 
     returnVar[:M] = M
@@ -35,7 +35,7 @@ function unbi_mat_estimate(X::Array{Float64,3},maxiter::Int64=100)::OrderedDict{
     return returnVar
 end
 
-function U_mle(X::Array{Float64,3},
+function U_est(X::Array{Float64,3},
 		M::Array{Float64,2},
 		V::Array{Float64,2})::Array{Float64,2}
 
@@ -64,7 +64,7 @@ end
 
 
 
-function V_mle(X::Array{Float64,3},
+function V_est(X::Array{Float64,3},
 		M::Array{Float64,2},
 		U::Array{Float64,2})::Array{Float64,2}
 
