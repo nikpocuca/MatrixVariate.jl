@@ -13,6 +13,4 @@ module MatrixVariate
 	# abstract type definitions
 	abstract type MatrixVariateTest end
 
-
-
 end # module

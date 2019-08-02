@@ -19,7 +19,7 @@
 
 		# MAIN Matrix Variate Normal Test function.
 		# X is an r x c x N array.
-		# α is power level.
+		# α is significance level.
 		# iter is the number of mle iterations for the matrix variate MLE estimate.
 	"""
 	function MatVTest(X::Array{Float64,3};α::Float64 = 0.05,iter::Int64 = 100)::MatrixVariateNormalTest

@@ -12,7 +12,6 @@ in pkg mode within a julia repl.
 ### MatrixNormTest
 
 A simple framework for assessing the matrix variate normality of data.
-by Nik Počuča
 
 - [Paper](https://www.google.com)
 - [Github](https://github.com/nikpocuca/MatrixNormTest.jl)
@@ -22,7 +21,7 @@ by Nik Počuča
 ### Main Test
 The function for the main test of matrix variate normality in a dataset.
 - X is an r x c x N array.
-- α is power level.
+- α is the significance level.
 - iter is the number of mle iterations for the matrix variate MLE estimate.
 
 ```@docs
@@ -62,8 +61,8 @@ An object that contains all necessary information for a matrix variate normality
 
 - matrix distances, d_mat
 - multivariate distances, d_mat
-- Kolmogorov Smirnov Test, ks_test
-- P Value, p_val
+- Kolmogorov Smirnov test, ks_test
+- p-value, p_val
 ```@setup norm_struct
 using HypothesisTests
 ```
