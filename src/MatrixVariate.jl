@@ -11,17 +11,30 @@ print("    __  ___ _    __
 
 	using HypothesisTests, RCall, JLD2
 
-	# MatrixVariate Test v. 0.1.0 +
+	# ========================================
+	# Version 0.1.0 +
+	# ========================================
+
+	# MatrixVariate Test
 	include("MatrixNormTest/MatrixNormTest.jl")
-	# Matrix Bilinear Facor Analyzers  v. 0.2.0 +
+
+	# ========================================
+	# Version 0.2.0 +
+	# ========================================
+
+	# Matrix Bilinear Facor Analyzers
 	include("MbiClust/mbiclust.jl")
-	# Matrix Kmeans v. 0.2.0 +
+
+	# Matrix Kmeans
 	include("KMeans/MatrixKMeans.jl")
-	# mvgen, and mix_gen, generates matrix variate data v. 0.2.0 +
+
+	# mvgen, and mix_gen, generates matrix variate data
 	include("MVNGen/mvngen.jl")
 	include("MVNGen/mix_gen.jl")
 
-	# abstract type definitions
+	# ========================================
+
+	# Abstract type definitions
 	abstract type MatrixVariateTest end
 	abstract type MatrixVariateModel end
 

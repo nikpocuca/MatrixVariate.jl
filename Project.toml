@@ -1,7 +1,7 @@
 name = "MatrixVariate"
 uuid = "946e395a-a902-11e9-38c2-c3243e8e5be8"
 authors = ["Nik Počuča, Michael P. B. Gallaugher, Paul D. McNicholas"]
-version = "0.1.0"
+version = "0.2.0"
 
 [deps]
 DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"

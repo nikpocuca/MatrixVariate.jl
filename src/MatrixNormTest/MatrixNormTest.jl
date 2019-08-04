@@ -6,7 +6,7 @@
 	include("unbi_mult_estimate.jl")
 	include("unbi_mat_estimate.jl")
 
-	mutable struct MatrixVariateNormalTest
+	mutable struct MatrixVariateNormalTest <: MatrixVariateTest
 		d_mat::Array{Float64,1};
 		d_mult::Array{Float64,1};
 		ks_test::ApproximateTwoSampleKSTest;
