@@ -17,7 +17,7 @@ A framework for assessing matrix variate normality.
 ![](/docs/src/src/nnorm.png)
 
 ### Bilinear Factor Analyzers
-A Mixture of Factor analyzers for matrices. [arXiv paper](https://arxiv.org/abs/1712.08664).
+A mixture of Factor Analyzers for matrices. [arXiv paper](https://arxiv.org/abs/1712.08664).
 
 
 ## Citing  MatrixVariate.jl
