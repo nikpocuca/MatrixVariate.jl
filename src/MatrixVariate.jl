@@ -11,6 +11,10 @@ print("    __  ___ _    __
 
 	using HypothesisTests, RCall, JLD2
 
+	# Abstract type definitions
+	abstract type MatrixVariateTest end
+	abstract type MatrixVariateModel end
+
 	# ========================================
 	# Version 0.1.0 +
 	# ========================================
@@ -34,8 +38,6 @@ print("    __  ___ _    __
 
 	# ========================================
 
-	# Abstract type definitions
-	abstract type MatrixVariateTest end
-	abstract type MatrixVariateModel end
+
 
 end # module
