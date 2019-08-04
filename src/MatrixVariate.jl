@@ -5,7 +5,7 @@ print("    __  ___ _    __
  / /  / /  | |/ /
 /_/  /_/   |___/
                                       \n")
-	import LinearAlgebra, RCall ,StatsBase, HypothesisTests, DataStructures, JLD2, Distances, Statistics, Random, ProgressMeter
+	import LinearAlgebra, Rmath ,RCall ,StatsBase, HypothesisTests, DataStructures, JLD2, Distances, Statistics, Random, ProgressMeter
 
 	export MatVTest, ddplot, MatrixVariateNormalTest, MatrixVariateTest, mkmeans, mbiclust
 
@@ -23,5 +23,6 @@ print("    __  ___ _    __
 
 	# abstract type definitions
 	abstract type MatrixVariateTest end
+	abstract type MatrixVariateModel end
 
 end # module
