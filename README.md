@@ -20,9 +20,6 @@ A framework for assessing matrix variate normality.
 A Mixture of Factor analyzers for matrices. [arXiv paper](https://arxiv.org/abs/1712.08664).
 
 
-## Documentation
-The [package documentation](https://nikpocuca.github.io/MatrixVariate.jl/) is currently brief as the test is fairly straight forward, it contains only one main function and one for plotting.
-
 ## Citing  MatrixVariate.jl
 
 To cite MatrixVariate.jl, please reference the bibtex below:
