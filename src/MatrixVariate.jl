@@ -7,7 +7,7 @@ print("    __  ___ _    __
                                       \n")
 	import LinearAlgebra, Rmath ,RCall ,StatsBase, HypothesisTests, DataStructures, JLD2, Distances, Statistics, Random, ProgressMeter
 
-	export MatVTest, ddplot, MatrixVariateNormalTest, MatrixVariateTest, mkmeans, mbiclust
+	export MatrixVariateTest, MatrixVariateModel, MatVTest, ddplot, MatrixVariateNormalTest, MatrixVariateTest, mkmeans, mbiclust
 
 	using HypothesisTests, RCall, JLD2
 
