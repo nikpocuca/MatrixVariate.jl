@@ -19,6 +19,7 @@ A framework for assessing matrix variate normality.
 ### Bilinear Factor Analyzers
 A mixture of Factor Analyzers for matrices. [arXiv paper](https://arxiv.org/abs/1712.08664).
 
+Mean of each group for MNIST results. 
 ![](5s.png)
 ![](7s.png)
 
