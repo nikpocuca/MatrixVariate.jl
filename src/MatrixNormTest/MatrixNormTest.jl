@@ -1,8 +1,9 @@
 
+    using RecipesBase
 
 	# Matrix Variate Mahalanobis Distance functions
 	include("mvoutlier.jl")
-	# Maximum Likelihood Estimates
+	# Unbiased Estimates
 	include("unbi_mult_estimate.jl")
 	include("unbi_mat_estimate.jl")
 
@@ -49,25 +50,39 @@
  		return MatrixVariateNormalTest(distances_Matrix,distances_multi,kstest,pval) ;
 	end
 
+	# IO
+	function Base.show(io::IO, test::MatrixVariateNormalTest)
+	    println(io, "---------------------------")
+	    println(io, "Matrix Variate Normal Test ")
+	    println(io, "---------------------------")
+		println(io, test.ks_test)
+	end
 
-	## DD plot, takes in a mat_test and plots it using R
+ 	# Plotting Tests
+
+	@recipe function plot(m_test::MatrixVariateNormalTest)
+
+		d_M::Array{Float64,1} = m_test.distances_Matrix;
+		d_m::Array{Float64,1} = m_test.distances_multi;
+
+		@series begin
+	    	seriestype := :scatter
+	    	color --> :black
+			markersize = 2
+	    	d_M, d_m
+		end
+	end
+
+
+	## DD plot, takes in a mat_test and plots
 	"""
 		ddplot(mat_test::MatrixVariateNormalTest)
 
 	"""
 	function ddplot(mat_test::MatrixVariateNormalTest)::nothing
 		# declare distances
-		d_mat = mat_test.d_mat;
-		d_mult = mat_test.d_mult;
-		@rput d_mat d_mult
-		R"
-			plot(d_mat,
-			d_mult,type = 'p', pch = 20,
-				cex = 0.5,xlab = 'Matrix Variate MSD',ylab = 'Multivariate MSD')
-			abline(0,1,col = 'red')
-			rm(d_mat)
-			rm(d_mult)
-		"
+		plot(mat_test)
+		Plots.abline!(0,1)
 	end
 
 	"""
