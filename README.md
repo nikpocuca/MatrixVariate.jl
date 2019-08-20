@@ -24,6 +24,15 @@ Mean of each group (5 and 7) for MNIST results.
 ![](5s.png)
 ![](7s.png)
 
+### Skewed Family of Bilinear Factor Analyzers
+
+A mixture of Factor Analyzers for matrices with a family of four skewed matrix variate distributions.  [arXiv paper](https://arxiv.org/abs/1809.02385)
+
+- Matrix Variate Skewed-t Distribution 
+- Matrix Variate Variance Gamma
+- Matrix Variate Normal Inverse Gaussian
+- Matrix Variate Generalized Hyperbolic 
+
 ## Citing  MatrixVariate.jl
 
 To cite MatrixVariate.jl, please reference the bibtex below:
