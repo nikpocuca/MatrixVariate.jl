@@ -5,9 +5,9 @@ print("    __  ___ _    __
  / /  / /  | |/ /
 /_/  /_/   |___/
                                       \n")
-	import LinearAlgebra, Rmath ,RCall ,StatsBase, HypothesisTests, DataStructures, JLD2, Distances, Statistics, Random, ProgressMeter
+	import LinearAlgebra, Rmath ,RCall ,StatsBase, HypothesisTests, DataStructures, JLD2, Distances, Statistics, Random, ProgressMeter, SpecialFunctions, Roots
 
-	export MatrixVariateTest, MatrixVariateModel, MatVTest, ddplot, MatrixVariateNormalTest, MatrixVariateTest, mkmeans, mbiclust
+	export MatrixVariateTest, MatrixVariateModel, MatVTest, ddplot, MatrixVariateNormalTest, MatrixVariateTest, mkmeans, mbiclust, skewedclust
 
 	using HypothesisTests, RCall, JLD2
 
@@ -35,6 +35,9 @@ print("    __  ___ _    __
 	# mvgen, and mix_gen, generates matrix variate data
 	include("MVNGen/mvngen.jl")
 	include("MVNGen/mix_gen.jl")
+
+	# Skewed family of matrix variate
+	include("SkewedClust/skewed_clust.jl")
 
 	# ========================================
 

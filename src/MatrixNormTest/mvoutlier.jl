@@ -51,7 +51,7 @@ function mul_dist(X_i::Array{Float64,3},
 	x_i::Array{Float64,2} = Array{Float64,2}(reshape(X_i,(d^2,N)))';
 
 	# Invert Covariance Matrix
-	Σ_inv  = inv(Σ);
+	Σ_inv::Array{Float64,2}  = inv(Σ);
 
 	# Convert distances
 	distances::Array{Float64,1} = Array{Float64,1}(undef,N);
